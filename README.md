@@ -85,9 +85,7 @@ Unlike standard AI chatbots that hallucinate code warnings, GitShield AI strictl
 Create a `.env` file from `.env.example`:
 
 ```env
-# IBM Services Essentials API Credentials
-LLM_API_KEY=your_ibm_api_key_here
-LLM_BASE_URL=https://api.servicesessentials.ibm.com/v1
+LLM_API_KEY=your_api_key_here
 LLM_MODEL=claude-sonnet-5-5
 
 # LLM Integration Settings
