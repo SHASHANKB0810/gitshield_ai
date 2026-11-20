@@ -1,0 +1,182 @@
+/* ==============================================================================
+   GitShield AI — Dark Navy Security Intelligence Theme
+   ============================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+:root {
+  --bg-primary: #0b0f19;
+  --bg-secondary: #111827;
+  --bg-card: #162032;
+  --bg-hover: #1f2d45;
+  --border-color: #26354d;
+  --border-light: #374765;
+  
+  --text-main: #f3f4f6;
+  --text-muted: #94a3b8;
+  --text-dim: #64748b;
+
+  --accent-cyan: #06b6d4;
+  --accent-blue: #3b82f6;
+  --accent-purple: #8b5cf6;
+
+  --severity-critical: #ef4444;
+  --severity-high: #f97316;
+  --severity-medium: #eab308;
+  --severity-low: #3b82f6;
+  --severity-info: #64748b;
+
+  --status-confirmed: #10b981;
+  --status-likely: #f59e0b;
+  --status-review: #6366f1;
+  --status-fp: #64748b;
+}
+
+/* App Background & Typography */
+.stApp {
+  background-color: var(--bg-primary);
+  color: var(--text-main);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* Header & Top Bar */
+.gitshield-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem 1.5rem;
+  background: linear-gradient(135deg, #111827 0%, #162032 100%);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.gitshield-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand-icon {
+  font-size: 1.8rem;
+  color: var(--accent-cyan);
+}
+
+.brand-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+  margin: 0;
+}
+
+.brand-subtitle {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+/* Metric / Stat Card */
+.stat-card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  padding: 1rem 1.25rem;
+  transition: all 0.2s ease;
+}
+
+.stat-card:hover {
+  border-color: var(--border-light);
+  transform: translateY(-2px);
+}
+
+.stat-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.stat-value {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-top: 4px;
+}
+
+/* Badges & Tags */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 3px 8px;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.badge-critical {
+  background-color: rgba(239, 68, 68, 0.15);
+  color: #fca5a5;
+  border: 1px solid rgba(239, 68, 68, 0.4);
+}
+
+.badge-high {
+  background-color: rgba(249, 115, 22, 0.15);
+  color: #fdba74;
+  border: 1px solid rgba(249, 115, 22, 0.4);
+}
+
+.badge-medium {
+  background-color: rgba(234, 179, 8, 0.15);
+  color: #fde047;
+  border: 1px solid rgba(234, 179, 8, 0.4);
+}
+
+.badge-low {
+  background-color: rgba(59, 130, 246, 0.15);
+  color: #93c5fd;
+  border: 1px solid rgba(59, 130, 246, 0.4);
+}
+
+.badge-success {
+  background-color: rgba(16, 185, 129, 0.15);
+  color: #6ee7b7;
+  border: 1px solid rgba(16, 185, 129, 0.4);
+}
+
+/* Status Indicator */
+.status-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.8rem;
+  padding: 4px 10px;
+  border-radius: 9999px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.status-dot.healthy {
+  background-color: #10b981;
+  box-shadow: 0 0 8px #10b981;
+}
+
+.status-dot.error {
+  background-color: #ef4444;
+  box-shadow: 0 0 8px #ef4444;
+}
+
+/* Code Snippets */
+code, pre {
+  font-family: 'JetBrains Mono', Consolas, monospace !important;
+}
